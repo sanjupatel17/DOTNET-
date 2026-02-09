@@ -1,0 +1,44 @@
+@model IEnumerable<Assignment6CRUD.Models.Student>
+
+<h2 class="mb-4 text-center">📋 Student List</h2>
+
+<div class="d-flex justify-content-end mb-3">
+    <a asp-action="Create" class="btn btn-success">
+        ➕ Add New Student
+    </a>
+</div>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark text-center">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+@{
+    int count = 1;
+}
+@foreach (var s in Model)
+{
+        <tr>
+            <td>@count</td>
+            <td>@s.Name</td>
+            <td>@s.Email</td>
+            <td>@s.Age</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@s.Id" class="btn btn-warning btn-sm">
+                    Edit
+                </a>
+                <a asp-action="Delete" asp-route-id="@s.Id" class="btn btn-danger btn-sm">
+                    Delete
+                </a>
+            </td>
+        </tr>
+    count++;
+}
+    </tbody>
+</table>

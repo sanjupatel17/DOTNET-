@@ -1,0 +1,140 @@
+/* =========================
+   Global Page Style
+========================= */
+body {
+    background-color: #f4f6f9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   Navbar Styling
+========================= */
+.navbar {
+    background: linear-gradient(90deg, #0d6efd, #084298);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #e9ecef !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.6);
+}
+
+/* =========================
+   Page Content
+========================= */
+main {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   Headings
+========================= */
+h2, h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Tables
+========================= */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #eef4ff;
+}
+
+/* =========================
+   Forms
+========================= */
+.form-control {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+
+label {
+    font-weight: 500;
+}
+
+/* =========================
+   Buttons
+========================= */
+.btn {
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+}
+
+.btn-success {
+    background-color: #198754;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+/* =========================
+   Cards (Create/Edit/Delete)
+========================= */
+.card {
+    border-radius: 12px;
+    border: none;
+}
+
+.card.shadow {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   Validation Messages
+========================= */
+.text-danger {
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+/* =========================
+   Footer
+========================= */
+.footer {
+    background-color: #ffffff;
+    font-size: 0.9rem;
+}

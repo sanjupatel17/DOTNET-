@@ -1,0 +1,11 @@
+@model Assignment6CRUD.Models.Student
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <input asp-for="Name" />
+    <input asp-for="Email" />
+    <input asp-for="Age" />
+
+    <button type="submit">Update</button>
+</form>

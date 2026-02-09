@@ -1,0 +1,20 @@
+@model Assignment6CRUD.Models.Student
+
+<h2>Create Student</h2>
+
+<form asp-action="Create" method="post">
+    <input asp-for="Name" placeholder="Name" />
+    <span asp-validation-for="Name"></span><br/>
+
+    <input asp-for="Email" placeholder="Email" />
+    <span asp-validation-for="Email"></span><br/>
+
+    <input asp-for="Age" placeholder="Age" />
+    <span asp-validation-for="Age"></span><br/>
+
+    <button type="submit">Save</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
