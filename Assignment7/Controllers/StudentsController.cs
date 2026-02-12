@@ -16,7 +16,7 @@ namespace Assignment7.Controllers
         public IActionResult Index()
         {
             var students = from s in _context.Students
-               where s.Age == 23
+               where s.Course == "IT"
                select s;
 
         return View(students.ToList());
